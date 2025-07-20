@@ -1,13 +1,99 @@
 body{
   background-image:url("https://i.pinimg.com/736x/89/c6/c1/89c6c104a986c73e8166fd9a048ceb13.jpg");
+  background-size:cover;
   
 }
+.spicy-rice-regular {
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.layout-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+  
+.banner,.links, .company, .nav-link, .search{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  padding: 5px;
+}
+/*holds the entire navbar- with starbucks logo, name, and tabs*/
+.banner{
+  width: 94%;
+}
+
+/*to hold the company name next to nav link tabs*/
+.company{
+  flex: 0.3;
+  font-family:"Spicy Rice";
+  font-size:20px;
+  color:rgb(253, 253, 253);
+  letter-spacing: 2.5px;
+  text-shadow: 12px 6px 4px  #137e2e;
+  padding: 15px 5px;
+  margin: 0px 10px;
+  width: 20%;
+}
+/* for the container to hold nav link tabs*/
+.links{
+  flex: 1;
+  width: 100%;
+  padding: 2px;
+  height: 120px;
+}
+/* for the nav links themselves*/
+.nav-link{
+  background-color: rgb(69, 167, 69);
+  flex: 1;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  margin: 0px 7px;
+  height: 90px; 
+  max-width: 150px;
+  border-radius: 50% 50%  12px 12px;
+  font-family:"Spicy Rice";
+  font-size: 15px;
+  padding: 5px;
+  cursor:pointer;
+}
+.nav-link:hover{
+  height: 110px;
+  transition: 0.3s ease all;
+  background-color: green;
+  color:whitesmoke;
+}
+/*nav buttons pictures*/
+.icon{
+  width: 50%;
+}
+.icon img{
+  width: 100%;
+}
+
+/* formatting for logo*/
+.logo{
+  width: 8%;
+}
+.logo img{
+  width: 100%;
+}
+
+/* sidebar formattings*/
 .main-sidebar, .sidebar-2{
   display:flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 20%;
+  width: 100%;
+  padding: 4px;
+  margin: 5px 0px;
 }
 /* formatting for the sidebar list boxes and elements*/
 .topic, .topic-links, .topic-list{
@@ -15,36 +101,44 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 8px;
   margin: 5px;
-  width: 96%;
+  width: 100%;
   border-radius: 8px;
 }
 .topic{
   background-color: rgb(69, 167, 69);
 }
-.topic-links, .topic-list{
+/*for the about section*/
+.topic-links{
   padding: 5px;
   font-size: 15px;
   margin: 0;
 }
 .topic-links a{
-  margin-top: 5px;
   color: rgb(7, 80, 7);
+  padding: 6px;
+  width:100%;
+  text-align: center;
 }
+/* for nonlinks section*/
 .topic-list ul{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   list-style-type: none;
-  width:80%;
+  margin:0;
 }
 .topic-list li {
-  width: 90%;
+  position:relative;
+  right: 15%;
+  width: 100%;
   text-align:center;
-  margin: 5px;
+  margin: 4px 0px;
+  padding: 4px;
+  font-size: 14px;
 }
+/*formatting for the sidebar ads*/
 .portrait-container{
   height: 300px;
   width: 100%;
@@ -53,29 +147,128 @@ body{
   width:100%;
   height:100%;
 }
-.sidebar-2{
-  height: 135vh;
-}
-.main-sidebar{
-  height: 160vh;
+/*holds main sidebar, children, right sidebar in layout*/
+.content-main{
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 95%;
 }
 
-/* formatting for the entire window- sidebars and main*/
-.content{
+/* container inside .content that holds main-1 and main-2*/
+.main-content{
   display:flex;
-  align-items: center;
+  align-items:flex-start;
   justify-content: center;
   flex-direction: row;
-  width:100%;
-  background-color:orange;
-  position:absolute;
+  width: 100%;
+  margin: 16px 0px;
+  background-color: whitesmoke;
+  border-radius: 6px;
 }
-/* formatting for contents*/
+/* formatting for main-1 and main-2, individually*/
 .main{
   display:flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color:pink;
+  height: 100%;
+  padding: 5px;
   width: 50%;
+}
+/* for the "article" elements */
+.content-block{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  padding: 5px;
+  margin: 7px 0px;
+}
+.content-title h3{
+  font-size: 24px;
+}
+.content-desc{
+  padding: 4px;
+}
+/* formatting for the "article" images*/
+.content-img{
+  width: 100%;
+  height: 250px;
+}
+.content-img img{
+  width:100%;
+  height:100%;
+}
+
+/* formatting for the main container's ads*/
+.landscape-container{
+  width: 100%;
+  height: 250px;
+}
+.landscape-container img{
+  width:100%;
+  height:100%;
+}
+
+.ad-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.ad-container .portrait-container{
+  width: 100%;
+}
+.ad-container .portrait-container img{
+  width: 100%;
+}
+.menu-section{
+  display:flex;
+  align-items: flex-start;
+  justify-content:center;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+/*formatting for menu items*/
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 9px;
+  margin: 10px;
+  width: 42%;
+  background-color: whitesmoke;
+  border: 2px solid purple;
+  border-radius: 8px;
+  min-height: 330px;
+  height:auto;
+  max-height: 400px;
+}
+.item-name h3{
+  margin:15px 0px;
+}
+
+.item-d{
+  font-size: 14px;
+  width: 100%;
+}
+
+.item-img img{
+  width: 120px;
+  height: 120px;
+}
+
+@media only screen and (max-width: 950px) {
+  .company, .logo{
+    display:none;
+  }
+  .item{
+    width:100%;
+    height:auto;
+  }
 }
