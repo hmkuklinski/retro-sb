@@ -8,6 +8,11 @@ import Refreshers from './components/refreshers/Refreshers';
 import Seasonal from './components/seasonal/Seasonal';
 import Classics from './components/classics/Classics';
 import Food from './components/food/Food';
+import Breakfast from './components/food/Breakfast';
+import Snacks from './components/food/Snacks';
+import Bakery from './components/food/Bakery';
+import Lunch from './components/food/Lunch.jsx';
+import SeasonalBakes from './components/food/SeasonalBakes.jsx';
 
 import {Routes, Route} from "react-router-dom";
 
@@ -24,6 +29,11 @@ function App() {
         <Route path="/refreshers" element={<Refreshers />} />
         <Route path="/seasonal" element={<Seasonal />} />
         <Route path="/food" element={<Food />} />
+        <Route path="/breakfast" element={<Breakfast />} />
+        <Route path="/bakery" element={<Bakery />} />
+        <Route path="/lunch" element={<Lunch />} />
+        <Route path="/snacks" element={<Snacks />} />
+        <Route path="/bakery-limited" element={<SeasonalBakes />} />
       </Routes>
     </div>
   );

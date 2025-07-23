@@ -10,6 +10,9 @@ export default function MenuItem(props){
             <div className="item-d">
                 <p>{props.desc}</p>
             </div>
+            <div className="item-price">
+                <b>${props.price}</b>
+            </div>
         </div>
     );
 }

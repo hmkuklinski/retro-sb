@@ -333,7 +333,7 @@ body{
 .item{
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
   padding: 9px;
   /* margin: 10px; */
@@ -343,16 +343,24 @@ body{
   border-radius: 8px;
   min-height:320px;
   height:auto;
-  max-height: 400px;
+  max-height: 450px;
   text-align:center;
   box-sizing:border-box;
 }
+.item-name{
+  margin-top: 8px;
+}
 .item-name h3{
-  margin:15px 0px;
+  margin:0;
+}
+.item-price{
+  font-size: 20px;
+  font-weight: 650;
+  color:purple;
 }
 
 .item-d{
-  font-size: 14px;
+  font-size: 17px;
   width: 100%;
 }
 
