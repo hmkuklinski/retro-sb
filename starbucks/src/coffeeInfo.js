@@ -314,7 +314,7 @@ export const topicList = [
 //these are sidebar lists that have links
 export const topicLinkList = [
     {id:"about", title:"About", links: [{id:1, text:"Our Origins", link:"/"}, {id:2, text:"Our Beans", link:"/beans"}, {id:3, text:"Our Creations", link:"/"}, {id:4,text:"Our Connections", link:"/"}]},
-    {id:"careers", title:"Careers", links: [{id:1, text:"Barista", link:"/"}, {id:2, text:"Shift Lead", link:"/"}, {id:3, text:"Store Manager", link:"/"}]},
+    {id:"careers", title:"Careers", links: [{id:0, text:"All Careers", link:"/careers"},{id:1, text:"Barista", link:"/careers/barista"}, {id:2, text:"Shift Lead", link:"/careers/shift"}, {id:3, text:"Assistant SM", link:"/careers/asm"}, {id:4, text:"SM", link:"/careers/sm"}, {id:5, text:"District Manager", link:"/careers/dm"}]},
     {id:"community", title:"Community", links:[{id:1, text:"Food Donation", link:"/"}, {id:2, text:"Volunteer", link:"/"}, {id:3, text:"Grounds for Garden", link:"/"}]},
     {id:"food", title:"Food", links:[{id:1, text:"Bakery", link:"/bakery"}, {id:2, text:"Breakfast", link:"/breakfast"}, {id:3, text:"Lunch", link:"/lunch"}, {id:4, text:"Snacks", link:"/snacks"}, {id:5, text:"Seasonal Bakes", link:"/bakery-limited"}, {id:6, text:"All Foods", link:"/food"}]}
 ];
@@ -333,6 +333,16 @@ export const navbarLinks = [
 ];
 
 export const navbarMobileLinks = [...navbarLinks, 
-    {id:"food", name:"Food", imgsrc:"", link:"/food"}
+    {id:"food", name:"Food", imgsrc:"", link:"/food"},
+    {id:"careers", name:"Careers", imgsrc:"", link:"/careers"}
 ];
 
+
+//career info
+export const retailCareers= [
+    {id:1, name:"Barista", desc:"Baristas are the heart of Starbucks. As a barista, you're skilled in connecting and creating moments, and an expert in handcrafting delicious beverages. You all work together to create a welcoming store environment, bringing our mission and values to life—for our customers and each other—while proudly wearing the green apron.", apply:"https://apply.starbucks.com/careers?&query=Barista", imgsrc:"/assets/jobs/barista.jpg"},
+    {id:2, name:"Shift Supervisor", desc:"Shift Supervisors create great experiences for partners and customers alike. As a Shift Supervisor, you'll run shifts, lead the store team and make decisions that impact store operations. This role is a great way to develop leadership skills and expand your responsibility.", apply:"https://apply.starbucks.com/careers?query=Shift%20Supervisor", imgsrc:"/assets/jobs/shift.jpg"},
+    {id:3, name:"Assistant Store Manager", desc:"Assistant Managers inspire our customers while developing management skills on their journey to running a great store on their own. The role provides the opportunity to manage store operations, drive business results, lead a team and develop talent—allowing those partners to become the very best they can.", apply:"https://apply.starbucks.com/careers?job_function=Assistant%20Store%20Manager", imgsrc:"/assets/jobs/asm.jpg"},
+    {id:4, name:"Store Manager", desc:"As a Store Manager, you'll run your store as if it belongs to you—from managing daily operations to growing your business. Managers are front-of-house leaders, spending time on the floor to connect with employees, customers, coach in the moment and identify ways to drive results. The role provides the opportunity to develop your own team and future leaders for your store.", apply:"https://apply.starbucks.com/careers?job_function=Store%20Manager", imgsrc:"/assets/jobs/sm.jpg"},
+    {id:5, name:"District Manager", desc:"As a District Manager you'll lead a multi-store portfolio and you're accountable for store performance in your district by assessing the business, creating meaningful plans to drive results and building connections with your community. District Managers coach and develop future talent, share company vision and goals and consistently inspire teams to create meaningful connections for customers and each other.", apply:"https://apply.starbucks.com/careers?job_function=District%20Manager", imgsrc:"/assets/jobs/dm.jpg"}
+];

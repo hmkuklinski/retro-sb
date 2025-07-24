@@ -1,6 +1,6 @@
-export default function MenuItem(props){
+export default function Job(props){
     return (
-        <div className="item">
+        <div className="item" id="job">
             <div className="item-img">
                 <img src={props.imgsrc} alt={props.id} />
             </div>
@@ -10,9 +10,11 @@ export default function MenuItem(props){
             <div className="item-d">
                 <p>{props.desc}</p>
             </div>
-            {props.price && (<div className="item-price">
-                <b>${props.price}</b>
-            </div>)}
+            <div className="item-button">
+                <button>
+                    <a href={props.link}>Search Jobs</a>
+                </button>
+            </div>
         </div>
     );
 }

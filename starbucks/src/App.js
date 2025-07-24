@@ -13,6 +13,12 @@ import Snacks from './components/food/Snacks';
 import Bakery from './components/food/Bakery';
 import Lunch from './components/food/Lunch.jsx';
 import SeasonalBakes from './components/food/SeasonalBakes.jsx';
+import Careers from './components/pages/Careers.jsx';
+import Barista from './components/pages/Barista.jsx';
+import Shift from './components/pages/Shift.jsx';
+import ASM from './components/pages/ASM.jsx';
+import SM from './components/pages/SM.jsx';
+import DM from './components/pages/DM.jsx';
 
 import {Routes, Route} from "react-router-dom";
 
@@ -34,6 +40,12 @@ function App() {
         <Route path="/lunch" element={<Lunch />} />
         <Route path="/snacks" element={<Snacks />} />
         <Route path="/bakery-limited" element={<SeasonalBakes />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/careers/barista" element={<Barista />} />
+        <Route path="/careers/shift" element={<Shift />} />
+        <Route path="/careers/asm" element={<ASM />} />
+        <Route path="/careers/sm" element={<SM />} />
+        <Route path="/careers/dm" element={<DM />} />
       </Routes>
     </div>
   );
