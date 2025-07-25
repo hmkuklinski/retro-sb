@@ -6,7 +6,7 @@ import Section from "../Section";
 export default function Careers(){
     return (
         <Layout>
-            <div className="content" id="coffee">
+            <div className="content" id="careers">
                 {retailCareers.map((career) => (
                     <Section
                         key={career.id}

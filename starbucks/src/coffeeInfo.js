@@ -313,10 +313,11 @@ export const topicList = [
 
 //these are sidebar lists that have links
 export const topicLinkList = [
-    {id:"about", title:"About", links: [{id:1, text:"Our Origins", link:"/"}, {id:2, text:"Our Beans", link:"/beans"}, {id:3, text:"Our Creations", link:"/"}, {id:4,text:"Our Connections", link:"/"}]},
-    {id:"careers", title:"Careers", links: [{id:0, text:"All Careers", link:"/careers"},{id:1, text:"Barista", link:"/careers/barista"}, {id:2, text:"Shift Lead", link:"/careers/shift"}, {id:3, text:"Assistant SM", link:"/careers/asm"}, {id:4, text:"SM", link:"/careers/sm"}, {id:5, text:"District Manager", link:"/careers/dm"}]},
-    {id:"community", title:"Community", links:[{id:1, text:"Food Donation", link:"/"}, {id:2, text:"Volunteer", link:"/"}, {id:3, text:"Grounds for Garden", link:"/"}]},
-    {id:"food", title:"Food", links:[{id:1, text:"Bakery", link:"/bakery"}, {id:2, text:"Breakfast", link:"/breakfast"}, {id:3, text:"Lunch", link:"/lunch"}, {id:4, text:"Snacks", link:"/snacks"}, {id:5, text:"Seasonal Bakes", link:"/bakery-limited"}, {id:6, text:"All Foods", link:"/food"}]}
+    {id:"about", title:"About", titleLink:"/", links: [{id:1, text:"Our Origins", link:"/origins"}, {id:2, text:"Our Community", link:"/communities"}]},
+    {id:"careers", title:"Careers", titleLink:"/careers", links: [{id:1, text:"Barista", link:"/careers/barista"}, {id:2, text:"Shift Lead", link:"/careers/shift"}, {id:3, text:"Assistant SM", link:"/careers/asm"}, {id:4, text:"SM", link:"/careers/sm"}, {id:5, text:"District Manager", link:"/careers/dm"}]},
+    {id:"community", title:"Community", titleLink:"/communities", links:[{id:1, text:"Food Donation", link:"/food-donations"}, {id:2, text:"Volunteer", link:"/communities"}]},
+    {id:"food", title:"Food", titleLink:"/food", links:[{id:1, text:"Bakery", link:"/bakery"}, {id:2, text:"Breakfast", link:"/breakfast"}, {id:3, text:"Lunch", link:"/lunch"}, {id:4, text:"Snacks", link:"/snacks"}, {id:5, text:"Seasonal Bakes", link:"/bakery-limited"}]},
+    {id:"beans", title:"Beans", titleLink:"/beans", links: [{id:2, text:"Blonde", link:"/beans/blonde"}, {id:3, text:"Medium", link:"/beans/medium"}, {id:4, text:"Dark", link:"/beans/dark"}, {id:5, text:"Decaf", link:"/beans/decaf"}, {id:6, text:"Flavored", link:"/beans/flavored"}]},
 ];
 
 //these are all the links in the navbar
@@ -334,7 +335,8 @@ export const navbarLinks = [
 
 export const navbarMobileLinks = [...navbarLinks, 
     {id:"food", name:"Food", imgsrc:"", link:"/food"},
-    {id:"careers", name:"Careers", imgsrc:"", link:"/careers"}
+    {id:"careers", name:"Careers", imgsrc:"", link:"/careers"},
+    {id:"beans", name:"Beans", imgsrc:"", link:"/beans"}
 ];
 
 
@@ -346,3 +348,82 @@ export const retailCareers= [
     {id:4, name:"Store Manager", desc:"As a Store Manager, you'll run your store as if it belongs to you—from managing daily operations to growing your business. Managers are front-of-house leaders, spending time on the floor to connect with employees, customers, coach in the moment and identify ways to drive results. The role provides the opportunity to develop your own team and future leaders for your store.", apply:"https://apply.starbucks.com/careers?job_function=Store%20Manager", imgsrc:"/assets/jobs/sm.jpg"},
     {id:5, name:"District Manager", desc:"As a District Manager you'll lead a multi-store portfolio and you're accountable for store performance in your district by assessing the business, creating meaningful plans to drive results and building connections with your community. District Managers coach and develop future talent, share company vision and goals and consistently inspire teams to create meaningful connections for customers and each other.", apply:"https://apply.starbucks.com/careers?job_function=District%20Manager", imgsrc:"/assets/jobs/dm.jpg"}
 ];
+
+export const originsContent = [
+    {id:1, text:"Our story begins in 1971 along the cobblestone streets of Seattle’s historic Pike Place Market. It was here where Starbucks opened its first store, offering fresh-roasted coffee beans, tea and spices from around the world for our customers to take home. Our name was inspired by the classic tale, “Moby-Dick,” evoking the seafaring tradition of the early coffee traders."},
+    {id:2, text:"Ten years later, a young New Yorker named Howard Schultz would walk through these doors and become captivated with Starbucks coffee from his first sip. After joining the company in 1982, a different cobblestone road would lead him to another discovery. It was on a trip to Milan in 1983 that Howard first experienced Italy’s coffeehouses, and he returned to Seattle inspired to bring the warmth and artistry of its coffee culture to Starbucks. By 1987, we swapped our brown aprons for green ones and embarked on our next chapter as a coffeehouse."},
+    {id:3, text:"Starbucks would soon expand to Chicago and Vancouver, Canada and then on to California, Washington, D.C. and New York. By 1996, we would cross the Pacific to open our first store in Japan, followed by Europe in 1998 and China in 1999. Over the next two decades, we would grow to welcome millions of customers each week and become a part of the fabric of tens of thousands of neighborhoods all around the world. In everything we do, we are always dedicated to Our Mission: With every cup, with every conversation, with every community - we nurture the limitless possibilities of human connection."}
+];
+
+export const ourProcess = [
+    {id:1, text:"Starbucks proudly sources 100% arabica coffee from more than 450,000 farmers in 30 markets along “The Coffee Belt” – in Latin America, Asia Pacific and Africa. Our buyers, based in Lausanne, Switzerland, scour the globe for the finest coffees, including our premium, single-origin Reserve selections."},
+    {id:2, text:"Given the stressors on coffee and agriculture, including rapid climate change, we feel the responsibility and urgency to help and protect – not only farmer livelihoods but the human connections inherent to coffee. Which is why Starbucks is focused squarely on improving coffee productivity, profitability and climate resilience."},
+    {id:3, text:"We have a research and innovation farm, Hacienda Alsacia, on the slopes of Volcano Poás in Costa Rica, the hub for our open-source agronomy initiatives and global research and development efforts. The team there manages the Starbucks core coffee collection – more than 600 coffee hybrids and varietals – to find those with the elusive combination of good taste, high productivity and natural resistance to disease and climate change. The most climate resistant seeds and seedlings are distributed, for free, to farmers around the world."},
+    {id:4, text:"We test, learn and innovate at our network of research farms, like Hacienda Alsacia, and our two new farms in Guatemala and Costa Rica, with future farm investments in Africa and Asia. World-class agronomists share the latest in best practices at our 10 Farmer Support Centers, located in the heart of coffee-growing regions. And we put our solutions into action at more than 70 smallholder “model farms” in our supply chain, where other farmers, whether they sell to Starbucks or not, can see for themselves what works."},
+    {id:5, text:"We’re proud of how we’ve led and supported the coffee industry. In 2004, in collaboration with Conservation International, we developed Coffee and Farmer Equity (C.A.F.E.) Practices, one of the coffee industry’s first ethical sourcing guidelines. C.A.F.E. Practices is a set of more than 200 checkpoints in categories like economic transparency, social responsibility, environmental leadership and quality – all audited through a third-party independent verification process."},
+    {id:6, text:"Other commitments: a $50M Global Coffee Farmer Fund, which provides financing to coffee farmers, and a pledge to donate 100M climate-resilient trees to farmers around the world by 2025. The Starbucks Foundation also has a goal to positively impact 100M women and girls in coffee-growing communities, through grants focused on creating economic opportunities and expanding access to clean water and sanitation. "}
+];
+
+export const foodDonation = [
+    {id:1, text:"In 2016, Starbucks partners (employees) advocated for a program that would allow stores to donate unsold food to people facing hunger in communities across the US. Today, Starbucks FoodShare is a pinnacle food rescue program with a national effort across 100% of our company-operated stores. In partnership with Feeding America® and other hunger-relief organizations, our stores provide nourishing, ready-to-eat meals to people in need and divert surplus food from landfills."},
+    {id:2, text:"At the end of each day, Starbucks partners collect leftover food to donate. Through our third-party logistics backhaul model, we employ delivery drivers with refrigerated trucks to pick up the donations and transport them to a nearby distribution center. From there, donations are sorted and delivered to regional food banks and local food pantries."},
+    {id:3, text:"At the 2025 Engage for Good Halo Awards, Starbucks and Feeding America were recognized for Best Food Insecurity Initiative and Best of the Best initiative between for-profit and non-profit organizations for our innovative FoodShare food donation program. The Halo Awards are the top honor for corporate social impact, recognizing innovative and effective partnerships between companies and nonprofits for 23 years."},
+    {id:4, text:"Starbucks receives a U.S. federal tax benefit for every pound of food donated, and we are committed to reinvesting 100% of the benefit back into our food waste reduction and hunger relief efforts. These funds cover the costs of food rescue logistics and investments into food banks and other hunger relief initiatives.  A core component of our FoodShare program is our Capacity Building Grants for FoodShare-partnered hunger relief organizations. We pair our in-kind food donations with financial investment in food bank operations to empower greater capacity and food distribution. To date, we have provided over $6.7M in Capacity Building Grants to more than 300 food banks and local nonprofit organizations to support food distribution efforts."}
+];
+
+export const communityPhotos = [
+    {id:1, imgsrc:"/assets/community/dc1.jpg", loc:"Washington, DC", caption:"An annual street clean-up project kicked off at the Starbucks Anacostia Community Store in Washington, D.C. (Photos by Ting Shen)"},
+    {id:2, imgsrc:"/assets/community/la1.jpg", loc:"Los Angeles, CA", caption:"Sisters of Watts and the Starbucks Black Partner Network worked together to give away more than 200 meals at the Starbucks Watts Community Store in Los Angeles. (Photos by Alisha Jucevic)"},
+    {id:3, imgsrc:"/assets/community/miami1.jpg", loc:"Miami, FL", caption:"Led by City Year Miami, volunteers painted educational murals and inspirational quotes at Robert Russa Moton Elementary School. (Photos by Josh Ritchie)"},
+    {id:4, imgsrc:"/assets/community/mn1.jpg", loc:"Roseville, MN", caption:"In Roseville, Minnesota, Every Meal focused on food insecurity by packing meals for children and families who face food gaps on weekends and extended breaks. (Photos by Andrea Ellen Reed)"},
+    {id:5, imgsrc:"/assets/community/nyc1.jpg", loc:"New York City", caption:"Starbucks teamed up with City Year New York to create vibrant learning spaces at Mosaic Preparatory Academy in East Harlem. (Photos by Aristide Economopoulos)"},
+    {id:6, imgsrc:"/assets/community/seattle1.jpg", loc:"Seattle, WA", caption:"Local NGOs were invited to provide resources for houseless neighbors at a pop-up at the Starbucks Heritage Store in downtown Seattle. (Photos by Connor Surdi)"},
+];
+
+//---------------------------------------- BEAN INFO -------------------------------------------
+export const mediumBeans = [
+    {id:"pike", name:"Pike Place", roastType:"medium", imgsrc:"/assets/beans/pike.jpg", desc:"A smooth, well-rounded blend of Latin American coffees with subtle notes of cocoa and rich praline, it's perfect for every day."},
+    {id:"mountain", name:"Mountain Blend", roastType:"medium",  imgsrc:"/assets/beans/mountain.jpg", desc:"Notes of cocoa nib and orange zest come together to create an approachable gourmet coffee that can be brewed and enjoyed either hot or iced throughout spring.​  Only available from JANUARY to JUNE"},
+    {id:"holiday", name:"Holiday Blend", roastType:"medium",  imgsrc:"/assets/beans/holiday.jpg", desc:"An elegant coffee with delicious maple and herbal notes that are balanced with a medium acidity and body. Only available from OCTOBER to DECEMBER"},
+    {id:"iced-coffee", name:"Starbucks® Iced Coffee Blend Signature Black", roastType:"medium", imgsrc:"/assets/beans/iced-coffee.jpg", desc:"Expertly crafted to be enjoyed cold, this balanced, caramelly smooth and utterly refreshing cup of iced coffee can be served black or with milk and your favorite sweetener."},
+    {id:"half-caf", name:"Starbucks® Half-Caff House Blend", roastType:"medium", imgsrc:"/assets/beans/half-caf.jpg", desc:"An even blend of our signature decaf and regular Starbucks® House Blend with rich notes of cocoa and toffee. It's just enough caffeine for an afternoon pick-me-up or all-day sipping."},
+    {id:"fall", name:"Starbucks® Fall Blend Coffee", roastType:"medium", imgsrc:"/assets/beans/fall.jpg", desc:"Enjoy everything you love about your favorite season in a cup of Starbucks® Fall Blend coffee, with hearty notes of fall spices. Only available from AUGUST to OCTOBER"},
+    {id:"colombia", name:"Colombia", roastType:"medium", imgsrc:"/assets/beans/colombia.jpg", desc:"Colombia is a balanced single-origin medium roast with subtle notes of toasted walnut and herbs."},
+    {id:"breakfast", name:"Breakfast Blend", roastType:"medium", imgsrc:"/assets/beans/breakfast.jpg", desc:"Notes of sweet orange and brown sugar mingle in our lightest medium roast coffee."},
+    {id:"house", name:"House Blend", roastType:"medium", imgsrc:"/assets/beans/house.jpg", desc:"Aroma, body and flavor all in balance. House Blend is a medium roast with notes of toffee and dusted cocoa."},
+];
+export const darkBeans = [
+    {id:"espresso", name:"Espresso Roast", roastType:"dark",  imgsrc:"/assets/beans/espresso.jpg", desc:"A classic and time-honored dark roast with notes of molasses and caramelized sugar that’s perfect for making classic espresso drinks."},
+    {id:"verona", name:"Caffè Verona®", roastType:"dark", imgsrc:"/assets/beans/verona.jpg", desc:"Well-balanced and full-bodied, Caffè Verona® is a storied dark roast with notes of dark cocoa and caramelized sugar."},
+    {id:"italian", name:"Italian Roast", roastType:"dark", imgsrc:"/assets/beans/italian.jpg", desc:"A dark roast with sweet undertones that leads to a depth of flavor. Has notes of dark chocolate and Toasted marshmallows."},
+    {id:"sumatra", name:"Sumatra", roastType:"dark", imgsrc:"/assets/beans/sumatra.jpg", desc:"This single-origin dark coffee has bold flavor and notes of rich herbs and rustic spice."},
+    {id:"morning-joe", name:"Morning Joe", roastType:"dark", imgsrc:"/assets/beans/morning-joe.jpg", desc:"A bold, dark, complex coffee roasted to create a refined, lingering, full-bodied cup of coffee. Has notes of baking chocolate and dried fruit."},
+    {id:"french", name:"French Roast", roastType:"dark", imgsrc:"/assets/beans/french.jpg", desc:"With notes of dark caramel and sweet smoke, the explosive flavor of French Roast is as dark as our dark roasts get."},
+];
+export const blondeBeans = [
+    {id:"sunsera", name:"Sunsera", roastType:"blonde",  imgsrc:"/assets/beans/sunsera.jpg", desc:"A smooth and versatile blend with notes of citrus and toasted almond, this lightly roasted coffee is delicious hot or iced."},
+    {id:"veranda", name:"Starbucks® Veranda Blend®", roastType:"blonde", imgsrc:"/assets/beans/veranda.jpg", desc:"Our light roasted coffee with notes of toasted malt and milk chocolate."},
+];
+export const flavoredBeans = [
+    {id:"vanilla", name:"Starbucks® Vanilla Flavored Coffee", roastType:"flavored", imgsrc:"/assets/beans/vanilla.jpg", desc:"Craft a cup full of velvety and rich vanilla flavor with this coffee."},
+    {id:"caramel", name:"Starbucks® Caramel Flavored Coffee", roastType:"flavored", imgsrc:"/assets/beans/caramel.jpg", desc:"Bask in the delectable buttery and smooth sweetness of this flavored coffee."},
+    {id:"butterscotch", name:"Smoked Butterscotch Flavored Coffee", roastType:"flavored", imgsrc:"/assets/beans/butterscotch.jpg", desc:"Notes of salted browned butter and caramelized sugar come together with a smoky finish for a flavorful melody of smoky and sweet. ​ Only available from AUGUST to OCTOBER"},
+    {id:"brown-sugar", name:"Starbucks® Brown Sugar Cinnamon Flavored Coffee", roastType:"flavored", imgsrc:"/assets/beans/bs.jpg", desc:"An irresistibly aromatic cup of coffee with dark brown sugar and baked cinnamon notes, this new, naturally flavored spring seasonal lets you brew the best of spring. Only available from JANUARY to JUNE"},
+    {id:"coconut", name:"Starbucks® Toasted Coconut Mocha Flavored Coffee", roastType:"flavored", imgsrc:"/assets/beans/tcm.jpg", desc:"The natural flavors of toasted coconut and rich cocoa come together to create a delicious spring coffee refresh just for you. Only available from JANUARY to JUNE"},
+    {id:"vanilla-lav", name:"Vanilla Lavender Coffee", roastType:"flavored", imgsrc:"/assets/beans/vanilla-lav.jpg", desc:"Vibrant vanilla flavor blends with a touch of lavender for a delicate cup that can be enjoyed either hot or iced all season. Only available from JANUARY to JUNE"},
+    {id:"ps", name:"Starbucks® Pumpkin Spice Flavored Coffee", roastType:"flavored", imgsrc:"/assets/beans/ps.jpg", desc:"Indulge in a fall classic with notes of pumpkin and autumnal spices. Only available from AUGUST to OCTOBER"},
+    {id:"pecan", name:"Starbucks® Maple Pecan Flavored Coffee", roastType:"flavored", imgsrc:"/assets/beans/maple-pecan.jpg", desc:"Toasty pecan notes and sweet maple flavor create a complex and delightful aroma and taste that draws you in for another sip."},
+    {id:"pm-coffee", name:"Starbucks® Peppermint Mocha Flavored Coffee", roastType:"flavored", imgsrc:"/assets/beans/peppermint-mocha.jpg", desc:"Peppermint and mocha swirl together in this festive flavored coffee. Only available from OCTOBER to JANUARY"},
+    {id:"gingerbread", name:"Starbucks® Gingerbread Flavored Coffee", roastType:"flavored", imgsrc:"/assets/beans/gingerbread.jpg", desc:"Enjoy the flavors of freshly baked gingerbread with this sweet and delicately spiced festive coffee. Only available from OCTOBER to JANUARY"},
+    {id:"cd", name:"Starbucks® Cinnamon Dolce Flavored Coffee", roastType:"flavored", imgsrc:"/assets/beans/cinnamon-dolce.jpg", desc:"Enjoy a mug full of sweet and mellow cinnamon dolce taste with this flavored Starbucks® Blonde roast."},
+    {id:"mocha", name:"Starbucks® Mocha Flavored Coffee", roastType:"flavored", imgsrc:"/assets/beans/mocha.jpg", desc:"Brew a mug full of luscious mocha taste with this delicious flavored coffee."},
+
+];
+
+export const decafBeans = [
+    {id:"decaf-veranda", name:"Starbucks® Decaf Veranda Blend®", roastType:"blonde", imgsrc:"/assets/beans/decaf-veranda.jpg", desc:"A decaf take on our light roasted coffee with notes of toasted malt and milk chocolate."},
+    {id:"decaf-verona", name:"Decaf Caffè Verona®", roastType:"dark", imgsrc:"/assets/beans/decaf-verona.jpg", desc:"A decaf rendition of our iconic Caffè Verona® dark roast that perfectly preserves the blend’s tasting notes of dark cocoa and caramelized sugar."},
+    {id:"decaf-pike", name:"Decaf Pike Place® Roast", roastType:"medium", imgsrc:"/assets/beans/decaf-pike.jpg", desc:"A decaffeinated version of Pike Place® Roast, just as smooth and balanced as you’ve come to expect from our iconic medium roast."},
+    {id:"decaf-house", name:"Decaf House Blend", roastType:"medium", imgsrc:"/assets/beans/decaf-house.jpg", desc:"A decaf take on a classic Starbucks® medium roast coffee with notes of toffee and dusted cocoa. "},
+];
+

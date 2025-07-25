@@ -1,3 +1,4 @@
+
 export default function Job(props){
     return (
         <div className="item" id="job">
@@ -11,9 +12,7 @@ export default function Job(props){
                 <p>{props.desc}</p>
             </div>
             <div className="item-button">
-                <button>
-                    <a href={props.link}>Search Jobs</a>
-                </button>
+                <a href={props.apply} target="_blank" rel="noopener noreferrer">Search Jobs</a>
             </div>
         </div>
     );

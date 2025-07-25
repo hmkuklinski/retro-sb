@@ -2,6 +2,7 @@ import Layout from "../Layout";
 import {croissants, loafs, otherBaked} from "../../coffeeInfo";
 import MenuSection from "../MenuSection";
 import Section from "../Section";
+import RedirectLink from "./RedirectLink";
 
 export default function Bakery(){
     const croissantContent = <Section title="Croissants" content={<MenuSection sect={croissants} />} />;
@@ -13,6 +14,7 @@ export default function Bakery(){
                 {croissantContent}
                 {loafContent}
                 {otherContent}
+                <RedirectLink redir="/food" text="food" />
             </div>
         </Layout>
     );

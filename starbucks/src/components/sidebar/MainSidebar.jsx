@@ -12,6 +12,7 @@ export default function MainSidebar(){
             <Advertisement {...sidebarAds[0]} />
             <Topic {...topicList[0]} />
             <TopicLinks {...topicLinkList[3]} />
+            <TopicLinks {...topicLinkList[4]} />
         </div>
     );
 }
