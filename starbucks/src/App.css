@@ -128,7 +128,7 @@ body{
   top: 100%;
   left: 0;
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-color: #e8ffe8;
   border-top: 1px solid #ccc;
   padding: 10px 0;
@@ -445,7 +445,14 @@ body{
   flex-direction: column;
   width: 100%;
 }
-.subcontent .title h2, .origins-title h2, .donations-title h2, .communities-title h2{
+.subcontent .title h2 a{
+  text-decoration:none;
+  color:whitesmoke;
+}
+.subcontent .title h2 a:hover{
+  text-shadow: 12px 3px 4px  rgb(10, 179, 80);
+}
+.subcontent .title h2, .origins-title h2, .donations-title h2, .communities-title h2, .error-title h2{
   font-family:"Spicy Rice";
   color:whitesmoke;
   letter-spacing: 2.5px;
@@ -453,7 +460,7 @@ body{
   font-size: 35px;
   margin:0;
 }
-.origins-title h2, .donations-title h2, .communities-title h2{
+.origins-title h2, .donations-title h2, .communities-title h2, .error-title h2{
   margin-bottom: 25px;
 }
 
@@ -551,6 +558,28 @@ body{
   font-style:italic;
 }
 
+#error{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  width: 80%;
+  padding: 4px;
+}
+.error-btn{
+  width: 100%;
+}
+.error-d .item{
+  padding: 10px;
+  width: 100%;
+}
+.error-d .item-name h3{
+  font-size: 28px;
+}
+.error-d .item-d{
+  font-size: 19px;
+  padding: 5px;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -621,5 +650,7 @@ body{
     position:relative;
     left: 10%;
   }
-
+  .item{
+    width: 100%;
+  }
 }

@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-export default function RedirectLink({redir, text}){
+export default function RedirectLink({redir, text, override=null}){
     const navigate = useNavigate();
 
     const handleClick = () => {
@@ -9,7 +9,8 @@ export default function RedirectLink({redir, text}){
     };
     return (
         <div className="redirect" onClick={handleClick}>
-            <Link to={redir}>View all {text}</Link>
+            {!override && <Link to={redir}>View all {text}</Link>}
+            {override && <Link to={redir}>Go {text}</Link> }
         </div>
     );
 }

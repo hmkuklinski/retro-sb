@@ -1,15 +1,15 @@
 import Layout from "../Layout";
-import {lunchSandwiches} from "../../coffeeInfo";
+import {croissants} from "../../coffeeInfo";
 import MenuSection from "../MenuSection";
 import Section from "../Section";
 import RedirectLink from "../RedirectLink";
 
-export default function Lunch(){
-    const lunchContent = <Section title="Lunches" content={<MenuSection sect={lunchSandwiches} />} />;
+export default function Croissants(){
+    const croissantContent = <Section title="Croissants" content={<MenuSection sect={croissants} />} />;
     return (
         <Layout>
-            <div className="content" id="lunch">
-                {lunchContent}
+            <div className="content" id="croissants">
+                {croissantContent}
                 <RedirectLink redir="/food" text="food" />
             </div>
         </Layout>

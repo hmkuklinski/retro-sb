@@ -2,7 +2,7 @@ import Layout from "../Layout";
 import {decafBeans} from "../../coffeeInfo";
 import MenuSection from "../MenuSection";
 import Section from "../Section";
-import RedirectLink from "../food/RedirectLink";
+import RedirectLink from "../RedirectLink";
 
 export default function Decaf(){
     const decafContent = <Section title="Decaf Roasts" content={<MenuSection sect={decafBeans} />} />;
@@ -10,8 +10,9 @@ export default function Decaf(){
         <Layout>
             <div className="content" id="beans">
                 {decafContent}
+                <RedirectLink redir="/beans" text="Beans" />
             </div>
-            <RedirectLink redir="/beans" text="Beans" />
+            
         </Layout>
     );
 }

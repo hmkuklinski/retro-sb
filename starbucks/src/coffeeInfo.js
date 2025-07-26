@@ -313,10 +313,10 @@ export const topicList = [
 
 //these are sidebar lists that have links
 export const topicLinkList = [
-    {id:"about", title:"About", titleLink:"/", links: [{id:1, text:"Our Origins", link:"/origins"}, {id:2, text:"Our Community", link:"/communities"}]},
+    {id:"about", title:"About", titleLink:"/", links: [{id:1, text:"Our Origins", link:"/origins"}, {id:2, text:"Our Community", link:"/communities"}, {id:3, text:"Our Process", link:"/process"}, {id:4, text:"Our Beans", link:"/beans"}]},
     {id:"careers", title:"Careers", titleLink:"/careers", links: [{id:1, text:"Barista", link:"/careers/barista"}, {id:2, text:"Shift Lead", link:"/careers/shift"}, {id:3, text:"Assistant SM", link:"/careers/asm"}, {id:4, text:"SM", link:"/careers/sm"}, {id:5, text:"District Manager", link:"/careers/dm"}]},
     {id:"community", title:"Community", titleLink:"/communities", links:[{id:1, text:"Food Donation", link:"/food-donations"}, {id:2, text:"Volunteer", link:"/communities"}]},
-    {id:"food", title:"Food", titleLink:"/food", links:[{id:1, text:"Bakery", link:"/bakery"}, {id:2, text:"Breakfast", link:"/breakfast"}, {id:3, text:"Lunch", link:"/lunch"}, {id:4, text:"Snacks", link:"/snacks"}, {id:5, text:"Seasonal Bakes", link:"/bakery-limited"}]},
+    {id:"food", title:"Food", titleLink:"/food", links:[{id:1, text:"Bakery", link:"/food/bakery"}, {id:2, text:"Breakfast", link:"/food/breakfast"}, {id:3, text:"Lunch", link:"/food/lunch"}, {id:4, text:"Snacks", link:"/food/snacks"}, {id:5, text:"Seasonal Bakes", link:"/food/bakery-limited"}]},
     {id:"beans", title:"Beans", titleLink:"/beans", links: [{id:2, text:"Blonde", link:"/beans/blonde"}, {id:3, text:"Medium", link:"/beans/medium"}, {id:4, text:"Dark", link:"/beans/dark"}, {id:5, text:"Decaf", link:"/beans/decaf"}, {id:6, text:"Flavored", link:"/beans/flavored"}]},
 ];
 
@@ -324,19 +324,21 @@ export const topicLinkList = [
 export const navbarLinks = [
     {id:"home", name:"Home", imgsrc:"https://cdn-icons-png.freepik.com/512/8395/8395475.png", link:"/"},
     {id:"coffee", name:"Coffee", imgsrc:"https://cdn-icons-png.flaticon.com/512/8230/8230211.png", link:"/coffee"},
-    {id:"teas", name:"Tea", imgsrc:"https://cdn-icons-png.flaticon.com/512/6304/6304749.png", link:"/tea"},
+    {id:"teas", name:"Tea", imgsrc:"https://cdn-icons-png.flaticon.com/512/8970/8970057.png", link:"/tea"},
     {id:"classics", name:"Classics", imgsrc:"https://cdn-icons-png.flaticon.com/512/1992/1992719.png", link:"/classics"},
     {id:"specialty", name:"Specialty", imgsrc:"https://cdn-icons-png.flaticon.com/512/412/412864.png", link:"/specialty"},
     {id:"refreshers", name:"Refreshers", imgsrc:"https://cdn-icons-png.flaticon.com/512/2790/2790229.png", link:"/refreshers"},
     {id:"fraps", name:"Fraps", imgsrc:"https://cdn-icons-png.flaticon.com/512/7929/7929588.png", link:"/fraps"},
     // {id:"seasonal", name:"Seasonal", imgsrc:"https://cdn-icons-png.flaticon.com/512/2831/2831957.png", link:"/seasonal"},
-    
+    {id:"food", name:"Food", imgsrc:"https://cdn-icons-png.flaticon.com/512/2821/2821805.png", link:"/food"},
 ];
 
 export const navbarMobileLinks = [...navbarLinks, 
-    {id:"food", name:"Food", imgsrc:"", link:"/food"},
+    
+    {id:"beans", name:"Beans", imgsrc:"", link:"/beans"},
     {id:"careers", name:"Careers", imgsrc:"", link:"/careers"},
-    {id:"beans", name:"Beans", imgsrc:"", link:"/beans"}
+    {id:"community", name:"Community", imgsrc:"", link:"/communities"}
+    
 ];
 
 
@@ -391,6 +393,10 @@ export const mediumBeans = [
     {id:"colombia", name:"Colombia", roastType:"medium", imgsrc:"/assets/beans/colombia.jpg", desc:"Colombia is a balanced single-origin medium roast with subtle notes of toasted walnut and herbs."},
     {id:"breakfast", name:"Breakfast Blend", roastType:"medium", imgsrc:"/assets/beans/breakfast.jpg", desc:"Notes of sweet orange and brown sugar mingle in our lightest medium roast coffee."},
     {id:"house", name:"House Blend", roastType:"medium", imgsrc:"/assets/beans/house.jpg", desc:"Aroma, body and flavor all in balance. House Blend is a medium roast with notes of toffee and dusted cocoa."},
+    {id:"odyssey", name:"Starbucks Odyssey Blend® 2025", roastType:"medium", imgsrc:"/assets/beans/odyssey.png", desc:"Notes of Honeycomb & Orange. Starbucks Odyssey Blend® is our special love letter to coffee and a testament to our commitments to the planet. "},
+    {id:"siren", name:"Starbucks Siren’s Blend™", roastType:"medium", imgsrc:"/assets/beans/siren.png", desc:"The juicy, citrusy and chocolaty blend combines coffee from East Africa and Latin America. "},
+    {id:"ga", name:"Guatemala Antigua", roastType:"medium", imgsrc:"/assets/beans/ga.png", desc:"favorite of ours since 1971, this coffee is rich and refined, with elegant notes of dusted cocoa and soft spice."},
+    {id:"yukon", name:"Organic Yukon Blend®", roastType:"medium", imgsrc:"/assets/beans/yukon.png", desc:"Lively acidity and deep, earthy notes meld together in this classic blend. "},
 ];
 export const darkBeans = [
     {id:"espresso", name:"Espresso Roast", roastType:"dark",  imgsrc:"/assets/beans/espresso.jpg", desc:"A classic and time-honored dark roast with notes of molasses and caramelized sugar that’s perfect for making classic espresso drinks."},
@@ -399,10 +405,13 @@ export const darkBeans = [
     {id:"sumatra", name:"Sumatra", roastType:"dark", imgsrc:"/assets/beans/sumatra.jpg", desc:"This single-origin dark coffee has bold flavor and notes of rich herbs and rustic spice."},
     {id:"morning-joe", name:"Morning Joe", roastType:"dark", imgsrc:"/assets/beans/morning-joe.jpg", desc:"A bold, dark, complex coffee roasted to create a refined, lingering, full-bodied cup of coffee. Has notes of baking chocolate and dried fruit."},
     {id:"french", name:"French Roast", roastType:"dark", imgsrc:"/assets/beans/french.jpg", desc:"With notes of dark caramel and sweet smoke, the explosive flavor of French Roast is as dark as our dark roasts get."},
+    {id:"dragon", name:"Komodo Dragon Blend®", roastType:"dark", imgsrc:"/assets/beans/dragon.png", desc:"Deep, untamed flavors ripple in this cup—earthy, herbal and complex with a lingering spice."},
 ];
 export const blondeBeans = [
     {id:"sunsera", name:"Sunsera", roastType:"blonde",  imgsrc:"/assets/beans/sunsera.jpg", desc:"A smooth and versatile blend with notes of citrus and toasted almond, this lightly roasted coffee is delicious hot or iced."},
     {id:"veranda", name:"Starbucks® Veranda Blend®", roastType:"blonde", imgsrc:"/assets/beans/veranda.jpg", desc:"Our light roasted coffee with notes of toasted malt and milk chocolate."},
+    {id:"green-apron", name:"Starbucks® Green Apron Blend™", roastType:"blonde", imgsrc:"/assets/beans/green-apron.png", desc:"Notes of Honeybell Orange & Graham Cracker. This blend is for the Starbucks “partners” who wear the iconic green apron. "},
+    {id:"blonde-esp", name:"Starbucks® Blonde Espresso Roast", roastType:"blonde", imgsrc:"/assets/beans/blonde-esp.png", desc:"Experience the lighter side of espresso—a soft, beautifully balanced flavor profile that pairs perfectly with milk (or your favorite nondairy alternative)."},
 ];
 export const flavoredBeans = [
     {id:"vanilla", name:"Starbucks® Vanilla Flavored Coffee", roastType:"flavored", imgsrc:"/assets/beans/vanilla.jpg", desc:"Craft a cup full of velvety and rich vanilla flavor with this coffee."},
@@ -427,3 +436,4 @@ export const decafBeans = [
     {id:"decaf-house", name:"Decaf House Blend", roastType:"medium", imgsrc:"/assets/beans/decaf-house.jpg", desc:"A decaf take on a classic Starbucks® medium roast coffee with notes of toffee and dusted cocoa. "},
 ];
 
+export const errorMenu = {id:"error", name:"404 Page Not Found", imgsrc:"https://cdn-icons-png.flaticon.com/512/2921/2921288.png", desc:"The page you are searching for does not exist. Please try again"}
