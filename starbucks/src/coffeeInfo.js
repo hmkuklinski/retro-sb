@@ -29,7 +29,14 @@ export const specialtyIced = [
     {id:"isvl", name:"Iced Skinny Vanilla Latte", imgsrc:"/assets/specialties/iced-latte.jpg", desc:"Smooth Espresso, sugar-free vanilla syrup, and nonfat milk poured over ice for a light, refreshingly sweet pick-me-up.", price: 5.25},
 ];
 
-
+export const coldBrews = [
+    {id:"nitro-cold-brew", name:"Nitro Cold Brew", imgsrc:"/assets/coldbrew/nitro.jpg", desc:"Velvety-smooth, nitrogen-infused cold brew with a naturally sweet flavor and creamy texture.", price:"4.95"},
+    {id:"vanilla-sweet-cream-nitro", name:"Vanilla Sweet Cream Nitro", imgsrc:"/assets/coldbrew/vsc-nitro.jpg", desc:"Nitro cold brew topped with rich vanilla sweet cream for a smooth, subtly sweet finish.", price:"5.25"},
+    {id:"cold-brew", name:"Cold Brew", imgsrc:"/assets/coldbrew/iced-cb.jpg", desc:"Smooth, bold cold brew coffee served over ice with a naturally sweet, clean finish.", price:"4.45"},
+    {id:"vanilla-sweet-cream-cold-brew", name:"Vanilla Sweet Cream Cold Brew", imgsrc:"/assets/coldbrew/vsc-cb.jpg", desc:"Slow-steeped cold brew served over ice with a splash of house-made vanilla sweet cream.", price:"4.75"},
+    {id:"chocolate-cold-brew", name:"Chocolate Cold Brew", imgsrc:"/assets/coldbrew/chocolate-cb.jpg", desc:"Cold brew coffee mixed with rich mocha sauce for a bold and chocolatey pick-me-up.", price:"4.85"},
+    {id:"salted-caramel-cold-brew", name:"Salted Caramel Cold Brew", imgsrc:"/assets/coldbrew/salted-cb.jpg", desc:"Cold brew topped with salted caramel cold foam and a hint of vanilla syrup.", price:"5.15"},
+];
 //---------------------------------------- SHAKEN ESPRESSOS -------------------------------------------
 export const shakenEsp = [
     {id:"shaken-espresso", name:"Shaken Espresso", imgsrc:"/assets/shaken/ishaken.jpg", desc:"Espresso shots hand-shaken with ice for a smooth, chilled coffee experience.", price: 4.95},
@@ -94,8 +101,7 @@ export const seasonalFraps = [
 
 
 //---------------------------------------- SEASONALS -------------------------------------------
-export const fallSeasonals = [
-    {id:"psl", name:"Pumpkin Spice Latte", imgsrc:"/assets/seasonal/ps.jpg", desc:"Our signature espresso and steamed milk with the celebrated flavor combination of pumpkin, cinnamon, nutmeg and clove. Enjoy it topped with whipped cream and real pumpkin-pie spices.", price: 6.25},
+export const winterSeasonals = [
     {id:"cp", name:"Chestnut Praline", imgsrc:"/assets/seasonal/cp.jpg", desc:"We begin with our signature Espresso Roast and velvety steamed milk, and then add flavors of caramelized chestnuts and spices—all topped with a holiday finale of whipped cream and specially spiced praline crumbs.", price: 6.25},
     {id:"cbl", name:"Caramel Brulée Latte", imgsrc:"/assets/seasonal/cp.jpg", desc:"Our signature espresso, steamed milk and rich caramel brulée sauce finished with whipped cream and a supreme topping of even more caramel brulée bits.", price: 6.25},
     {id:"pm", name:"Peppermint Mocha", imgsrc:"/assets/seasonal/pm.jpg", desc:"Our festive, all-star Peppermint Mocha brightens the holidays: signature Espresso Roast combines with steamed milk, sweet mocha sauce and peppermint-flavored syrup, topped with whipped cream and dark-chocolate curls.", price: 6.25},
@@ -104,20 +110,64 @@ export const fallSeasonals = [
     {id:"pwhc", name:"Peppermint White Hot Chocolate", imgsrc:"/assets/seasonal/pwm.jpg", desc:"White-chocolate sauce, peppermint-flavored syrup and steamed milk, topped with sweet whipped cream and dark-chocolate curls—an oh-so-delightfully merry treat.", price: 4.95},
 ];
 
+export const springSeasonals = [
+    {id:"iced-cherry-chai", name:"Iced Cherry Chai", imgsrc:"/assets/seasonal/cherry-chai.jpg", desc:"A refreshing blend of spiced chai and cherry notes over ice, balanced with creamy milk.", price:"5.45"},
+    {id:"lavender-latte", name:"Lavender Latte", imgsrc:"/assets/specialties/latte.jpg", desc:"A floral and comforting latte made with espresso, steamed milk, and lavender syrup.", price:"5.65"},
+    {id:"iced-lavender-latte", name:"Iced Lavender Latte", imgsrc:"/assets/seasonal/lav-oat.jpg", desc:"A soothing iced latte made with espresso, milk, and delicate lavender syrup over ice.", price:"5.65"},
+    {id:"lavender-oatmilk-matcha", name:"Lavender Oatmilk Matcha", imgsrc:"/assets/seasonal/lav-matcha.jpg", desc:"Earthy matcha paired with oatmilk and a touch of lavender for a smooth, aromatic sip.", price:"5.75"},
+];
+export const fallSeasonals = [
+    {id:"psl", name:"Pumpkin Spice Latte", imgsrc:"/assets/seasonal/ps.jpg", desc:"Our signature espresso and steamed milk with the celebrated flavor combination of pumpkin, cinnamon, nutmeg and clove. Enjoy it topped with whipped cream and real pumpkin-pie spices.", price: 6.25},
+    {id:"pecan-oatmilk-cortado", name:"Pecan Oatmilk Cortado", imgsrc:"/assets/classics/cortado.jpg", desc:"A rich and nutty cortado featuring bold espresso, oatmilk, and pecan essence.", price:"4.95"},
+    {id:"pumpkin-cream-cold-brew", name:"Pumpkin Cream Cold Brew", imgsrc:"/assets/coldbrew/pumpkin-cb.jpg", desc:"Smooth cold brew topped with pumpkin cold foam and a dusting of fall spices.", price:"5.25"},
+    {id:"iced-pumpkin-cream-chai", name:"Iced Pumpkin Cream Chai", imgsrc:"/assets/seasonal/iced-pumpkin-chai.jpg", desc:"Spiced chai served over ice and topped with pumpkin-infused cold foam.", price:"5.45"},
+    {id:"pecan-crunch-oatmilk-latte", name:"Pecan Crunch Oatmilk Latte", imgsrc:"/assets/seasonal/pecan-crunch.jpg", desc:"Espresso and oatmilk combined with sweet pecan flavor and crunchy topping.", price:"5.65"},
+    {id:"iced-pecan-crunch-oatmilk-latte", name:"Iced Pecan Crunch Oatmilk Latte", imgsrc:"/assets/seasonal/pecan-crunch.jpg", desc:"Chilled espresso with oatmilk, pecan flavor, and a crunchy topping for a sweet, nutty finish.", price:"5.65"}
+];
+
 
 //summer specials!
 export const frozenLemonades = [
-    {id:"frozen-straw", name:"Frozen Strawberry Lemonade", imgsrc:"", desc:"A frosty blend of strawberry purée and lemonade, blended to perfection for a refreshing chill.", price: 4.95},
-    {id:"frozen-dragon", name:"Frozen Dragonfruit Lemonade", imgsrc:"", desc:"Dragonfruit flavors and lemonade blended with ice for a vibrant frozen twist.", price: 5.25},
-    {id:"frozen-pine", name:"Frozen Pineapple Lemonade", imgsrc:"", desc:"Tropical pineapple flavors frozen with tangy lemonade for a breezy, icy drink.", price: 5.25},
+    {id:"frozen-straw", name:"Frozen Strawberry Lemonade", imgsrc:"/assets/seasonal/strawberry-fl.jpg", desc:"A frosty blend of strawberry purée and lemonade, blended to perfection for a refreshing chill.", price: 4.95},
+    {id:"frozen-dragon", name:"Frozen Dragonfruit Lemonade", imgsrc:"/assets/seasonal/mango-fl.jpg", desc:"Dragonfruit flavors and lemonade blended with ice for a vibrant frozen twist.", price: 5.25},
+    {id:"frozen-pine", name:"Frozen Pineapple Lemonade", imgsrc:"/assets/seasonal/pineapple-fl.jpg", desc:"Tropical pineapple flavors frozen with tangy lemonade for a breezy, icy drink.", price: 5.25},
 ];
 
 export const spicyLemonades = [
-    {id:"spicy-straw", name:"Spicy Strawberry Lemonade", imgsrc:"", desc:"Classic strawberry lemonade with a bold twist of chili spice and icy refreshment.", price: 5.25},
-    {id:"spicy-dragon", name:"Spicy Dragonfruit Lemonade", imgsrc:"", desc:"Sweet dragonfruit lemonade kicked up with a touch of chili spice for heat and flavor.", price: 5.45},
-    {id:"spicy-pine", name:"Spicy Pineapple Lemonade", imgsrc:"", desc:"Zesty pineapple lemonade with a spicy chili pepper finish for a bold, tropical punch.", price: 5.45},
+    {id:"spicy-straw", name:"Spicy Strawberry Lemonade", imgsrc:"/assets/seasonal/spicy-strawberry.jpg", desc:"Classic strawberry lemonade with a bold twist of chili spice and icy refreshment.", price: 5.25},
+    {id:"spicy-dragon", name:"Spicy Dragonfruit Lemonade", imgsrc:"/assets/seasonal/spicy-mango.jpg", desc:"Sweet dragonfruit lemonade kicked up with a touch of chili spice for heat and flavor.", price: 5.45},
+    {id:"spicy-pine", name:"Spicy Pineapple Lemonade", imgsrc:"/assets/seasonal/spicy-pineapple.jpg", desc:"Zesty pineapple lemonade with a spicy chili pepper finish for a bold, tropical punch.", price: 5.45},
 ];
 
+export const springRefreshers = [
+    //blackberry sage
+    {id:"black-sage", name:"Blackberry Sage Refresher", imgsrc:"/assets/refreshers/bs.jpg", desc:"A herbal, fruity blend featuring blackberry and sage, offering a bold and refreshing profile.", price: 4.95},
+    {id:"black-sage-lemon", name:"Blackberry Sage Lemonade", imgsrc:"/assets/refreshers/bsl.jpg", desc:"Bold blackberry flavors and herbal sage mixed with lemonade and ice for a unique, crisp sip.", price: 4.95},
+    {id:"midnight-drink", name:"Midnight Drink", imgsrc:"/assets/refreshers/midnight.jpeg", desc:"This vivid drink features blackberry sage flavors with creamy coconutmilk and icy refreshment.", price: 4.95},
+];
+export const summerRefreshers = [
+    //summer berry
+    {id:"summer-berry", name:"Summer-Berry Refresher", imgsrc:"/assets/refreshers/sb.jpg", desc:"A limited-time blend of berry flavors, coconutmilk accents, and fruit inclusions served chilled.", price: 5.25},
+    {id:"summer-berry-lemon", name:"Summer-Berry Lemonade", imgsrc:"/assets/refreshers/sbl.jpg", desc:"Sweet berry flavors mixed with lemonade and ice for a cooling, summer-inspired treat.", price: 5.25},
+    {id:"summer-skies", name:"Summer Skies Drink", imgsrc:"/assets/refreshers/skies.jpg", desc:"A creamy, dreamy refresher made with summer berry flavors, coconutmilk, and vibrant ice.", price: 5.25},
+];
+
+export const summerSeasonals = [...summerRefreshers, ...frozenLemonades, ...spicyLemonades];
+
+export const winterRefreshers = [
+    //cranmerry orange
+    {id:"cran-merry", name:"Cran-Merry Orange Refresher", imgsrc:"/assets/refreshers/cm.jpg", desc:"A festive blend of cranberry and orange with a hint of spice, served chilled over ice.", price: 4.95},
+    {id:"cran-merry-lemon", name:"Cran-Merry Orange Lemonade", imgsrc:"/assets/refreshers/cmo.jpg", desc:"Cranberry and orange shaken with lemonade and ice for a sweet, tangy holiday flavor.", price: 4.95},
+    {id:"cran-merry-drink", name:"Cran-Merry Drink", imgsrc:"/assets/refreshers/cmdrink.jpg", desc:"A merry mix of holiday fruit flavors with creamy coconutmilk for a cozy pink drink.", price: 4.95},
+];
+
+export const seasonalRefreshers = [
+    ...springRefreshers, ...summerRefreshers, ...winterRefreshers,
+    //pineapple passionfruit
+    {id:"pine-pass", name:"Pineapple Passionfruit Refresher", imgsrc:"/assets/refreshers/pineapple.jpg", desc:"Tropical pineapple and passionfruit flavors shaken with ice for a bright, refreshing sip.", price: 4.95},
+    {id:"pine-pass-lemon", name:"Pineapple Passionfruit Lemonade", imgsrc:"/assets/refreshers/pineapple.jpg", desc:"A zesty twist of tropical fruit flavors combined with lemonade and ice.", price: 4.95},
+    {id:"paradise-drink", name:"Paradise Drink", imgsrc:"/assets/refreshers/paradise.jpg", desc:"A creamy tropical blend of pineapple passionfruit flavors with coconutmilk and fruit pieces.", price: 4.95},
+];
 //---------------------------------------- TEAS -------------------------------------------
 export const tea = [
     {id:"hcmt", name:"Honey Citrus Mint Tea", imgsrc:"/assets/teas/hcm.jpg", desc:"A soothing blend of Jade Citrus Mint® green tea, Peach Tranquility® herbal tea, hot water, steamed lemonade, and a touch of honey. Comforting and revitalizing.", price: 3.95},
@@ -166,27 +216,7 @@ export const refresherDrinks = [
     {id:"dragon-drink", name:"Dragon Drink", imgsrc:"/assets/refreshers/dragon.jpg", desc:"Creamy and colorful, the Dragon Drink blends mango dragonfruit Refresher with coconutmilk and ice.", price: 4.95},
 ];
 
-export const seasonalRefreshers = [
-    //summer berry
-    {id:"summer-berry", name:"Summer-Berry Refresher", imgsrc:"/assets/refreshers/sb.jpg", desc:"A limited-time blend of berry flavors, coconutmilk accents, and fruit inclusions served chilled.", price: 5.25},
-    {id:"summer-berry-lemon", name:"Summer-Berry Lemonade", imgsrc:"/assets/refreshers/sbl.jpg", desc:"Sweet berry flavors mixed with lemonade and ice for a cooling, summer-inspired treat.", price: 5.25},
-    {id:"summer-skies", name:"Summer Skies Drink", imgsrc:"/assets/refreshers/skies.jpg", desc:"A creamy, dreamy refresher made with summer berry flavors, coconutmilk, and vibrant ice.", price: 5.25},
-    
-    //blackberry sage
-    {id:"black-sage", name:"Blackberry Sage Refresher", imgsrc:"/assets/refreshers/bs.jpg", desc:"A herbal, fruity blend featuring blackberry and sage, offering a bold and refreshing profile.", price: 4.95},
-    {id:"black-sage-lemon", name:"Blackberry Sage Lemonade", imgsrc:"/assets/refreshers/bsl.jpg", desc:"Bold blackberry flavors and herbal sage mixed with lemonade and ice for a unique, crisp sip.", price: 4.95},
-    {id:"midnight-drink", name:"Midnight Drink", imgsrc:"/assets/refreshers/midnight.jpeg", desc:"This vivid drink features blackberry sage flavors with creamy coconutmilk and icy refreshment.", price: 4.95},
-    
-    //cranmerry orange
-    {id:"cran-merry", name:"Cran-Merry Orange Refresher", imgsrc:"/assets/refreshers/cm.jpg", desc:"A festive blend of cranberry and orange with a hint of spice, served chilled over ice.", price: 4.95},
-    {id:"cran-merry-lemon", name:"Cran-Merry Orange Lemonade", imgsrc:"/assets/refreshers/cmo.jpg", desc:"Cranberry and orange shaken with lemonade and ice for a sweet, tangy holiday flavor.", price: 4.95},
-    {id:"cran-merry-drink", name:"Cran-Merry Drink", imgsrc:"/assets/refreshers/cmdrink.jpg", desc:"A merry mix of holiday fruit flavors with creamy coconutmilk for a cozy pink drink.", price: 4.95},
-    
-    //pineapple passionfruit
-    {id:"pine-pass", name:"Pineapple Passionfruit Refresher", imgsrc:"/assets/refreshers/pineapple.jpg", desc:"Tropical pineapple and passionfruit flavors shaken with ice for a bright, refreshing sip.", price: 4.95},
-    {id:"pine-pass-lemon", name:"Pineapple Passionfruit Lemonade", imgsrc:"/assets/refreshers/pineapple.jpg", desc:"A zesty twist of tropical fruit flavors combined with lemonade and ice.", price: 4.95},
-    {id:"paradise-drink", name:"Paradise Drink", imgsrc:"/assets/refreshers/paradise.jpg", desc:"A creamy tropical blend of pineapple passionfruit flavors with coconutmilk and fruit pieces.", price: 4.95},
-];
+
 
 //---------------------------------------- FOOD INFO -------------------------------------------
 export const breakfastItems = [
@@ -249,6 +279,17 @@ export const snackBoxes = [
     {id:2, name:"Eggs and Cheddar Box", desc:"Hard-boiled eggs, cheddar cheese, and multigrain muesli bread for a protein-packed bite.", imgsrc:"/assets/food/eggbox.jpg", price: 7.95}
 ];
 
+export const cakePops = [
+    {id:"birthday-cake-pop", name:"Birthday Cake Pop", imgsrc:"/assets/cakepops/birthday-cp.jpg", desc:"A festive vanilla cake pop dipped in pink icing and coated with rainbow sprinkles.", price:"2.95"},
+    {id:"chocolate-cake-pop", name:"Chocolate Cake Pop", imgsrc:"/assets/cakepops/chocolate-cp.jpg", desc:"Rich chocolate cake enrobed in a smooth chocolatey coating.", price:"2.95"},
+    {id:"cookies-and-cream-cake-pop", name:"Cookies and Cream Cake Pop", imgsrc:"/assets/cakepops/cookies-cp.jpg", desc:"Crumbled chocolate cookies blended into creamy vanilla cake, dipped in white chocolate.", price:"2.95"}
+];
+
+export const seasonalCakePops = [
+    {id:"bee-cake-pop", name:"Bee Cake Pop", imgsrc:"/assets/cakepops/bee-cp.jpg", desc:"A cute bee-themed cake pop with sweet vanilla cake and yellow icing.", price:"3.25"},
+    {id:"owl-cake-pop", name:"Owl Cake Pop", imgsrc:"/assets/cakepops/owl-cp.jpg", desc:"Whimsical owl-shaped cake pop with chocolate cake and colorful icing details.", price:"3.25"},
+    {id:"racoon-cake-pop", name:"Racoon Cake Pop", imgsrc:"/assets/cakepops/racoon-cp.jpg", desc:"A fun racoon-themed cake pop made with cookies and cream cake inside.", price:"3.25"},
+];
 
 
 
@@ -293,8 +334,9 @@ export const homeCoffee = {
 //these are ads that are of portrait type
 export const sidebarAds = [
     {id:"refreshers", imgsrc:"/assets/ads/ref.jpg", adType:"portrait"},
-    {id:"frap-promo", imgsrc:"/assets/ads/unicorn.gif", adType:"portrait"},
-    {id:"fun-gif", imgsrc:"/assets/ads/walrus.gif", adType:"portrait"}
+    {id:"frap-promo", imgsrc:"/assets/ads/frap-promo1.jpg", adType:"portrait"},
+    {id:"fun-gif", imgsrc:"/assets/ads/walrus.gif", adType:"portrait"},
+    {id:"unicorn", imgsrc:"/assets/ads/unicorn.gif", adType:"portrait"}
 ];
 
 //these are ads that are of landscape type
@@ -318,6 +360,7 @@ export const topicLinkList = [
     {id:"community", title:"Community", titleLink:"/communities", links:[{id:1, text:"Food Donation", link:"/food-donations"}, {id:2, text:"Volunteer", link:"/communities"}]},
     {id:"food", title:"Food", titleLink:"/food", links:[{id:1, text:"Bakery", link:"/food/bakery"}, {id:2, text:"Breakfast", link:"/food/breakfast"}, {id:3, text:"Lunch", link:"/food/lunch"}, {id:4, text:"Snacks", link:"/food/snacks"}, {id:5, text:"Seasonal Bakes", link:"/food/bakery-limited"}]},
     {id:"beans", title:"Beans", titleLink:"/beans", links: [{id:2, text:"Blonde", link:"/beans/blonde"}, {id:3, text:"Medium", link:"/beans/medium"}, {id:4, text:"Dark", link:"/beans/dark"}, {id:5, text:"Decaf", link:"/beans/decaf"}, {id:6, text:"Flavored", link:"/beans/flavored"}]},
+    {id:"seasonal", title:"Seasonal", titleLink:"/seasonal", links: [{id:1, text:"Fraps", link:"/fraps/seasonal"}]}
 ];
 
 //these are all the links in the navbar
@@ -334,11 +377,9 @@ export const navbarLinks = [
 ];
 
 export const navbarMobileLinks = [...navbarLinks, 
-    
     {id:"beans", name:"Beans", imgsrc:"", link:"/beans"},
     {id:"careers", name:"Careers", imgsrc:"", link:"/careers"},
     {id:"community", name:"Community", imgsrc:"", link:"/communities"}
-    
 ];
 
 

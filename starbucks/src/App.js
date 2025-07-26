@@ -53,6 +53,14 @@ import TeaLattes from './components/tea/TeaLattes.jsx';
 import Process from './components/home/Process.jsx';
 import Error from './components/Error.jsx';
 import {Routes, Route} from "react-router-dom";
+import CakePops from './components/food/CakePops.jsx';
+import SeasonalCakePops from './components/food/SeasonalCakePops.jsx';
+import SpringSeasonal from './components/seasonal/SpringSeasonal.jsx';
+import SummerSeasonal from './components/seasonal/SummerSeasonal.jsx';
+import FallSeasonal from './components/seasonal/FallSeasonal.jsx';
+import WinterSeasonal from './components/seasonal/WinterSeasonal.jsx';
+import SeasonalSpecialty from './components/seasonal/SeasonalSpecialty.jsx';
+import ColdBrews from './components/specialties/ColdBrews.jsx';
 
 
 
@@ -75,6 +83,8 @@ function App() {
         <Route path="/specialty/hot" element={<HotSpecialty />} />
         <Route path="/specialty/iced" element={<IcedSpecialty />} />
         <Route path="/specialty/shaken-espresso" element={<ShakenEspresso />} />
+        <Route path="/specialty/cold-brews" element={<ColdBrews />} />
+        <Route path="/specialty/seasonal" element={<SeasonalSpecialty />} />
 
         <Route path="/tea" element={<Tea />} />
         <Route path="/tea/hot" element={<HotTea />} />
@@ -90,6 +100,11 @@ function App() {
         <Route path="/refreshers/seasonal" element={<SeasonalRefreshers />} />
 
         <Route path="/seasonal" element={<Seasonal />} />
+        <Route path="/seasonal/spring" element={<SpringSeasonal />} />
+        <Route path="/seasonal/summer" element={<SummerSeasonal />} />
+        <Route path="/seasonal/fall" element={<FallSeasonal />} />
+        <Route path="/seasonal/winter" element={<WinterSeasonal />} />
+        
 
         <Route path="/food" element={<Food />} />
         <Route path="/food/breakfast" element={<Breakfast />} />
@@ -104,6 +119,8 @@ function App() {
         <Route path="/food/snack-pockets" element={<SnackPockets />}/>
         <Route path="/food/baked-goods" element={<BakedGoods />} />
         <Route path="/food/bakery-limited" element={<SeasonalBakes />} />
+        <Route path="/food/cakepops" element={<CakePops />} />
+        <Route path="/food/seasonal-cakepops" element={<SeasonalCakePops />} />
 
         <Route path="/careers" element={<Careers />} />
         <Route path="/careers/barista" element={<Barista />} />
