@@ -360,7 +360,7 @@ export const topicLinkList = [
     {id:"community", title:"Community", titleLink:"/communities", links:[{id:1, text:"Food Donation", link:"/food-donations"}, {id:2, text:"Volunteer", link:"/communities"}]},
     {id:"food", title:"Food", titleLink:"/food", links:[{id:1, text:"Bakery", link:"/food/bakery"}, {id:2, text:"Breakfast", link:"/food/breakfast"}, {id:3, text:"Lunch", link:"/food/lunch"}, {id:4, text:"Snacks", link:"/food/snacks"}, {id:5, text:"Seasonal Bakes", link:"/food/bakery-limited"}]},
     {id:"beans", title:"Beans", titleLink:"/beans", links: [{id:2, text:"Blonde", link:"/beans/blonde"}, {id:3, text:"Medium", link:"/beans/medium"}, {id:4, text:"Dark", link:"/beans/dark"}, {id:5, text:"Decaf", link:"/beans/decaf"}, {id:6, text:"Flavored", link:"/beans/flavored"}]},
-    {id:"seasonal", title:"Seasonal", titleLink:"/seasonal", links: [{id:1, text:"Fraps", link:"/fraps/seasonal"}]}
+    {id:"seasonal", title:"Seasonal", titleLink:"/seasonal", links: [{id:1, text:"Fraps", link:"/fraps/seasonal"}, {id:2, text:"Specialty", link:"/specialty/seasonal"}, {id:3, text:"Refreshers", link:"/refreshers/seasonal"}, {id:4, text:"Spring",link:"/seasonal/spring"}, {id:5, text:"Summer", link:"/seasonal/summer"}, {id:6, text:"Fall", link:"/seasonal/fall"}, {id:7, text:"Winter", link:"/seasonal/winter"}, {id:8, text:"Bakery", link:"/food/bakery-limited"}, {id:9, text:"CakePops", link:"/food/seasonal-cakepops"}]}
 ];
 
 //these are all the links in the navbar
