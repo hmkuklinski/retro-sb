@@ -293,7 +293,7 @@ export const homeCoffee = {
 //these are ads that are of portrait type
 export const sidebarAds = [
     {id:"refreshers", imgsrc:"/assets/ads/ref.jpg", adType:"portrait"},
-    {id:"frap-promo", imgsrc:"/assets/ads/frap-promo.jpg", adType:"portrait"},
+    {id:"frap-promo", imgsrc:"/assets/ads/frap-promo1.jpg", adType:"portrait"},
     {id:"fun-gif", imgsrc:"/assets/ads/walrus.gif", adType:"portrait"}
 ];
 
